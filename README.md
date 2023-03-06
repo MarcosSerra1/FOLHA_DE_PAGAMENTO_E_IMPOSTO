@@ -32,7 +32,7 @@
 
 :heavy_check_mark: Calculo da folha de pagamento  
 
-:heavy_check_mark: Fazer recibo de pagamento 
+:heavy_check_mark: Calculo do Recibo 
 
 ## Pré-requisitos
 
@@ -44,7 +44,7 @@
 
 :memo: Cadastro de funcionarios
 
-:memo: Recibo de pagamento
+:memo: Calculo do recibo
 
 ## Desenvolvedores/Contribuintes :octocat:
 
