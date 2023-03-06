@@ -1,48 +1,76 @@
+ 
+
+#valor_hora = float(input('Digite o valor da hora de trabalho (somente numeros): '))
+#horas_trabalhadas = float(input('Digite quantas horas trabalhada no mes (somente numeros): '))
 
 
-valor_hora = float(input('Digite o valor da hora de trabalho (somente numeros): '))
-horas_trabalhadas = float(input('Digite quantas horas trabalhada no mes (somente numeros): '))
-salario_bruto = valor_hora*horas_trabalhadas
 
-desc_ir = 0
-porcentagem_ir = 0
 
-if salario_bruto > 0 and salario_bruto <= 1903.98:
-    desc_ir = 0
-    porcentagem_ir = '0'
 
-elif salario_bruto > 1903.98 and salario_bruto <= 2826.65:
-    desc_ir = 0.075
-    porcentagem_ir = '7,5%'
+# Dados para calculo da folha
 
-elif salario_bruto > 2826.65 and salario_bruto <= 3751.05:
-    desc_ir = 0.15
-    porcentagem_ir = '15%'
+salario_bruto = float(input('Digite um salario (somente numeros): ')) # Informar salario
 
-elif salario_bruto > 3751.05 and salario_bruto <= 4664.68:
-    desc_ir = 0.225
-    porcentagem_ir = '22,5%'
+inss_desc = 0  # desconto de inss
+porcentagem_inss = 0 # porcentagem aplicada
+
+# descobrindo a aliquota
+
+if salario_bruto > 0 and salario_bruto <= 1302.00:
+    inss_desc = 0.075
+    porcentagem_inss = '7,5%'
+
+elif salario_bruto > 1302.01 and salario_bruto <= 2571.29:
+    inss_desc = 0.09
+    porcentagem_inss = '9%'
+
+elif salario_bruto > 2571.30 and salario_bruto <= 3856.94:
+    inss_desc = 0.12
+    porcentagem_inss = '12%'
 
 else:
-    desc_ir = 0.275
-    porcentagem_ir = '27,5%'
+    inss_desc = 0.14
+    porcentagem_inss = '14%'
 
-ir = salario_bruto * desc_ir
+valor_inss = salario_bruto * inss_desc # valor do inss dado pelo valor do salario bruto * desconto do inss
 
-fgts = salario_bruto * 0.08
+base_irrf = salario_bruto - valor_inss # base irrf / ou imposto de renda
 
-inss = salario_bruto * 0.075
 
-total_descontos = inss + ir
+# conseguindo o valor da aliquota do imposto de renda
 
-salario_liquido = salario_bruto - total_descontos
+porcentagem_irrf = 0
 
-print('>>>>>>>>>>>>>>> FOLHA DE PAGAMENTO <<<<<<<<<<<<<<<')
-print('Salario Bruto..................................: R$%.2f' %(salario_bruto))
-print('(-)IR ('+porcentagem_ir+').....................: R$%.2f' %(ir)) # +porcentagem_ir+ é para aparecer a procentagem do imposto de renda
-print('(-)INSS (10%%).................................: R$%.2f' %(inss))
-print('FGTS (11%%)...........................................: R$%.2f' %(fgts))
-print('Total de descontos.............................: R$%.2f' %(total_descontos))
-print('Salario Liquido................................: R$%.2f' %(salario_liquido))
+if base_irrf > 0 and base_irrf <= 1903.98:
+    porcentagem_irrf = 0
+
+elif base_irrf > 1903.99 and base_irrf <= 2826.65:
+    porcentagem_irrf = 0.075
+
+elif base_irrf > 2826.66 and base_irrf <=  3751.05:
+    porcentagem_irrf = 0.15
+
+elif base_irrf > 3751.06 and base_irrf <= 4664.68:
+    porcentagem_irrf = 0.225
+
+else:
+    porcentagem_irrf = 0.275
+
+
+salario_liquido = salario_bruto - valor_inss
+
+
+print(salario_bruto)
+print('----------------')
+print(porcentagem_inss)
+print('----------------')
+print(valor_inss)
+print('----------------')
+print(base_irrf)
+print('-----------------')
+print(porcentagem_irrf)
+print('-----------------')
+print(salario_liquido)
+
 
 
