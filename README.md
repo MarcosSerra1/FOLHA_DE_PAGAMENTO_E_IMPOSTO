@@ -6,7 +6,7 @@
     <img src="https://img.shields.io/badge/EM-DESENVOLVIMENTO-red"/>
 </p>
 
-> Status do Projeto: :heavy_check_mark: :warning: (em desenvolvimento)
+> Status do Projeto: :warning: (em desenvolvimento)
 
 ### Tópicos 
 
@@ -25,16 +25,16 @@
 ## Descrição do projeto 
 
 <p align="justify">
-  Esse pojeto está sendo desenvolvido no intuito de auxiliar administradores e contadores com o calculo da folha de pagamento e seus impostos. 
+  Esse programa está sendo desenvolvido no intuito de auxiliar administradores e contadores com o calculo da folha de pagamento e seus impostos. 
 </p>
 
 ## Funcionalidades
 
-:heavy_check_mark: Funcionalidade 1  
+:heavy_check_mark: Cadastro de funcionarios 
 
-:heavy_check_mark: Funcionalidade 2  
+:heavy_check_mark: Calculo da folha de pagamento  
 
-:heavy_check_mark: Funcionalidade 3  
+:heavy_check_mark:  
 
 :heavy_check_mark: Funcionalidade 4  
 
