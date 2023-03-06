@@ -16,8 +16,6 @@
 
 :small_blue_diamond: [Pré-requisitos](#pré-requisitos)
 
-:small_blue_diamond: [Como rodar a aplicação](#como-rodar-a-aplicação-arrow_forward)
-
 ... 
 
 ## Descrição do projeto 
@@ -32,7 +30,7 @@
 
 :heavy_check_mark: Calculo da folha de pagamento  
 
-:heavy_check_mark: Calculo do Recibo 
+:heavy_check_mark: Calculo do recibo 
 
 ## Pré-requisitos
 
