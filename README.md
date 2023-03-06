@@ -1,13 +1,9 @@
 <h1>FOLHA DE PAGAMENTO E IMPOSTOS</h1> 
 
 <p align="center">
-  <img src="https://img.shields.io/badge/python-v3.11-blue"/>
-  <img src="http://img.shields.io/static/v1?label=License&message=MIT&color=green&style=for-the-badge"/>
-
-
-   <img src="http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=RED&style=for-the-badge"/>
-  
-
+    <img src="https://img.shields.io/badge/PYTHON-V3.11-blue"/>
+    <img src="https://img.shields.io/badge/LICENSE-MIT-green"/>
+    <img src="https://img.shields.io/badge/EM-DESENVOLVIMENTO-red"/>
 </p>
 
 > Status do Projeto: :heavy_check_mark: :warning: (em desenvolvimento)
