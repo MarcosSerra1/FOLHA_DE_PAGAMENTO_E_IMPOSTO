@@ -65,6 +65,6 @@ print('Salario Bruto............................: R$%.2f' %(salario_bruto))
 print('(-)IR ('+porcentagem_ir+')...............: R$%.2f' %(ir_aliquota))
 print('(-)INSS ('+porcentagem_inss+')...........: R$%.2f' %(valor_inss))
 print('FGTS.....................................: R$%.2f' %(fgts))
-#print('Total de descontos.......................: R$%.2f' %())
-print('Salario Liquido...........................: R$%.2f' %(salario_liquido))
+#print('Total de descontos......................: R$%.2f' %())
+print('Salario Liquido..........................: R$%.2f' %(salario_liquido))
 
